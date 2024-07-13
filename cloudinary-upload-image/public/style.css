@@ -1,0 +1,83 @@
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #444;
+    border: 1px solid #555;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    margin-top: 0;
+    color: #fff;
+    font-weight: bold;
+}
+
+input[type="file"] {
+    background-color: #555;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+button {
+    background-color: #666;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #777;
+}
+
+.message {
+    padding: 10px;
+    background-color: #444;
+    border: 1px solid #555;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.images img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid #555;
+    border-radius: 10px;
+    overflow: hidden;
+    /* add this to prevent overflow */
+    transition: transform 0.3s;
+    /* add a smooth transition effect */
+}
+
+.images img:hover {
+    transform: scale(1.1);
+    /* scale up the image on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* add a subtle shadow effect */
+    z-index: 1;
+    /* ensure the hovered image is on top of others */
+}
